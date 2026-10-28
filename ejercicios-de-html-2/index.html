@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mis prácticas HTML | UPRIT</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f4f8;
+            color: #263238;
+        }
+
+        /* ENCABEZADO */
+        header {
+            background-color: #ffffff;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 4px solid #0d47a1;
+        }
+
+        header img {
+            width: 85px;
+            height: 85px;
+            object-fit: contain;
+        }
+
+        .titulo h1 {
+            margin: 0 0 8px;
+            color: #0d47a1;
+            font-size: 25px;
+        }
+
+        .titulo p {
+            margin: 0;
+            color: #607d8b;
+        }
+
+        /* MENÚ */
+        nav {
+            background-color: #0d47a1;
+            padding: 0 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            display: block;
+            padding: 16px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #1565c0;
+        }
+
+        /* CONTENIDO */
+        main {
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #00000012;
+        }
+
+        h2 {
+            color: #0d47a1;
+            border-bottom: 2px solid #bbdefb;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #37474f;
+        }
+
+        li {
+            margin: 12px 0;
+        }
+
+        section a {
+            color: #1565c0;
+            text-decoration: none;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+            color: #d84315;
+        }
+
+        footer {
+            background-color: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* ADAPTACIÓN A CELULARES */
+        @media (max-width: 600px) {
+            header {
+                padding: 15px;
+                gap: 12px;
+            }
+
+            header img {
+                width: 65px;
+                height: 65px;
+            }
+
+            .titulo h1 {
+                font-size: 19px;
+            }
+
+            nav {
+                padding: 0 10px;
+            }
+
+            nav a {
+                padding: 13px 10px;
+            }
+
+            main {
+                padding: 0 12px;
+            }
+
+            section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img
+            src="https://moodle.uprit.edu.pe/pluginfile.php/1/core_admin/logocompact/300x300/1792471896/LOGOS-UPRIT-3.png"
+            alt="Logo UPRIT"
+        >
+
+        <div class="titulo">
+            <h1>LENGUAJE, PENSAMIENTO Y COGNICIÓN VISUAL</h1>
+            <p>Laboratorio de HTML | UPRIT</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../ejercicios-de-html-1/index.html">Ejercicios de HTML 1</a></li>
+            <li><a href="index.html">Ejercicios de HTML 2</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="inicio">
+            <h2>Bienvenido al Laboratorio HTML</h2>
+            <p>
+                En este sitio encontrarás los ejercicios desarrollados
+                durante las clases de HTML, organizados por grupos.
+            </p>
+        </section>
+
+        <section id="ejercicios-1">
+            <h2>Ejercicios de HTML 2</h2>
+            <p>en desarrollo</p>
+
+
+            </ul>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>Mis prácticas académicas | UPRIT</p>
+        <p>HTML · CSS · JavaScript</p>
+    </footer>
+
+</body>
+</html>
