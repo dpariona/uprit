@@ -1,0 +1,42 @@
+body {
+  font-family: Verdana;
+  background: #efe3f4;
+  color: #000;
+  margin: 25px;
+}
+
+h1 {
+  color: #333;
+  font-size: 20px;
+}
+
+h2 {
+  color: #666;
+  font-size: 16px;
+}
+
+p, li, a {
+  color: #000;
+  font-size: 12px;
+}
+
+a {
+  color: blue;
+}
+
+img {
+  width: 300px;
+  height: 225px;
+}
+
+.caja {
+  background: #fff;
+  border: 2px solid #c9a44e;
+  padding: 18px;
+  max-width: 760px;
+}
+
+.destacado {
+  background: #f3e5ab;
+  padding: 8px;
+}
