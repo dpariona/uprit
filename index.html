@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mis prácticas HTML | UPRIT</title>
+    <title>Trabajo académico | UPRIT</title>
 
     <style>
         * {
@@ -21,24 +21,29 @@
 
         /* ENCABEZADO */
         header {
-            background-color: #ffffff;
-            padding: 15px 30px;
+            background-color: white;
+            padding: 20px;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 20px;
             border-bottom: 4px solid #0d47a1;
         }
 
         header img {
-            width: 85px;
-            height: 85px;
+            width: 90px;
+            height: 90px;
             object-fit: contain;
         }
 
+        .titulo {
+            text-align: left;
+        }
+
         .titulo h1 {
-            margin: 0 0 8px;
             color: #0d47a1;
-            font-size: 25px;
+            margin: 0 0 8px;
+            font-size: 26px;
         }
 
         .titulo p {
@@ -46,26 +51,25 @@
             color: #607d8b;
         }
 
-        /* MENÚ */
+        /* MENÚ PRINCIPAL */
         nav {
             background-color: #0d47a1;
-            padding: 0 30px;
         }
 
         nav ul {
             list-style: none;
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
-            gap: 5px;
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
 
         nav a {
             display: block;
-            padding: 16px 20px;
             color: white;
             text-decoration: none;
+            padding: 16px 25px;
         }
 
         nav a:hover {
@@ -81,8 +85,8 @@
 
         section {
             background-color: white;
-            margin-bottom: 25px;
             padding: 25px;
+            margin-bottom: 25px;
             border-radius: 10px;
             box-shadow: 0 3px 10px #00000012;
         }
@@ -93,31 +97,73 @@
             padding-bottom: 10px;
         }
 
-        h3 {
-            color: #0d47a1;
-            border-bottom: 2px solid #bbdefb;
-            padding-bottom: 10px;
-        }
-		 h4 {
-            color: #0d47a1;
-            border-bottom: 2px solid #bbdefb;
-            padding-bottom: 10px;
+        .curso {
+            text-align: center;
         }
 
-        li {
-            margin: 12px 0;
+        .curso h2 {
+            border-bottom: none;
         }
 
-        section a {
+        .curso a {
             color: #1565c0;
             text-decoration: none;
         }
 
-        section a:hover {
+        .curso a:hover {
             text-decoration: underline;
-            color: #d84315;
         }
 
+        .docente {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        /* INTEGRANTES */
+        .integrantes {
+            list-style: none;
+            padding: 0;
+        }
+
+        .integrantes li {
+            background-color: #f0f4f8;
+            border-left: 4px solid #0d47a1;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        /* TARJETAS DE EJERCICIOS */
+        .contenedor-menus {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .tarjeta {
+            text-align: center;
+            border-top: 4px solid #0d47a1;
+        }
+
+        .tarjeta p {
+            line-height: 1.6;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #0d47a1;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .boton:hover {
+            background-color: #1565c0;
+        }
+
+        /* PIE DE PÁGINA */
         footer {
             background-color: #0d47a1;
             color: white;
@@ -130,28 +176,23 @@
             margin: 5px;
         }
 
-        /* ADAPTACIÓN A CELULARES */
+        /* DISEÑO PARA CELULARES */
         @media (max-width: 600px) {
             header {
-                padding: 15px;
-                gap: 12px;
+                flex-direction: column;
+                text-align: center;
             }
 
-            header img {
-                width: 65px;
-                height: 65px;
+            .titulo {
+                text-align: center;
             }
 
             .titulo h1 {
-                font-size: 19px;
-            }
-
-            nav {
-                padding: 0 10px;
+                font-size: 21px;
             }
 
             nav a {
-                padding: 13px 10px;
+                padding: 13px 12px;
             }
 
             main {
@@ -161,90 +202,103 @@
             section {
                 padding: 18px;
             }
+
+            .contenedor-menus {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 
 <body>
 
+    <!-- ENCABEZADO CON LOGO -->
     <header>
         <img
             src="https://moodle.uprit.edu.pe/pluginfile.php/1/core_admin/logocompact/300x300/1792471896/LOGOS-UPRIT-3.png"
-            alt="Logo UPRIT"
+            alt="Logo de UPRIT"
         >
 
-        <div class="titulo">			
-            <h4>LENGUAJE, PENSAMIENTO Y COGNICIÓN VISUAL</h4>
-            <p>Laboratorio de HTML | UPRIT</p>
+        <div class="titulo">
+            <h1>Laboratorio de HTML</h1>
+            <p>Universidad Privada de Trujillo - UPRIT</p>
         </div>
     </header>
 
+    <!-- MENÚ DE NAVEGACIÓN -->
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="ejercicios-de-html-1/">Ejercicios de HTML 1</a></li>
-            <li><a href="ejercicios-de-html-2/">Ejercicios de HTML 2</a></li>
+            <li><a href="ejercicios-de-html-1/index.html">Ejercicios de HTML 1</a></li>
+            <li><a href="ejercicios-de-html-2/index.html">Ejercicios de HTML 2</a></li>
         </ul>
     </nav>
 
     <main>
 
-        <section id="inicio">
-            <h2>Bienvenido a mis prácticas</h2>
-            <p>
-                En este sitio encontrarás los ejercicios desarrollados
-                durante las clases de HTML, organizados por grupos.
-            </p>
+        <!-- DATOS DEL CURSO -->
+        <section class="curso">
+            <h2>
+                <a href="https://moodle.uprit.edu.pe/course/view.php?id=4346"
+                   target="_blank" rel="noopener noreferrer">
+                    LENGUAJE, PENSAMIENTO Y COGNICIÓN VISUAL
+                </a>
+            </h2>
+
+            <p><strong>DOCENTE:</strong> José Arturo Díaz Pulido</p>
         </section>
 
-        <section id="ejercicios-1">
-            <h2>Ejercicios de HTML 1</h2>
-            <p>Prácticas de enlaces, texto, párrafos y páginas temáticas.</p>
+        <!-- INTEGRANTES -->
+        <section>
+            <h2>Integrantes del grupo</h2>
 
-            <h3>Buscadores y enlaces</h3>
-            <ul>
-                <li><a href="ejercicios-de-html-1/buscadores.html">Buscadores</a></li>
-                <li><a href="ejercicios-de-html-1/enlaces-favoritos.html">Enlaces favoritos</a></li>
-                <li><a href="ejercicios-de-html-1/listas-de-enlaces.html">Listas de enlaces</a></li>
-            </ul>
-
-            <h3>Redes y comentarios</h3>
-            <ul>
-                <li><a href="ejercicios-de-html-1/redes-sociales.html">Redes sociales</a></li>
-                <li><a href="ejercicios-de-html-1/comentarios.html">Comentarios</a></li>
-            </ul>
-
-            <h3>Formatos y párrafos</h3>
-            <ul>
-                <li><a href="ejercicios-de-html-1/formatos-de-texto.html">Formatos de texto</a></li>
-                <li><a href="ejercicios-de-html-1/dos-parrafos.html">Dos párrafos</a></li>
-                <li><a href="ejercicios-de-html-1/cuatro-parrafos-con-estilos.html">Cuatro párrafos con estilos</a></li>
-            </ul>
-
-            <h3>Datos y páginas temáticas</h3>
-            <ul>
-                <li><a href="ejercicios-de-html-1/datos-numeros.html">Datos y números</a></li>
-                <li><a href="ejercicios-de-html-1/grupos-de-musica/">Grupos de música</a></li>
-                <li><a href="ejercicios-de-html-1/recetas-de-cocina/">Recetas de cocina</a></li>
-            </ul>
+            <ol class="integrantes">
+                <li>Andonaire Sisniegas, Grecia Del Boca</li>
+                <li>Concepcion Raico, Wildor Alfredo</li>
+                <li>Ricra Taipe, Hugo</li>
+                <li>Saenz Arango, Yessenia</li>
+                <li>Pariona Huarcaya, Donato</li>
+                <li>Yaulilahua Marcañaupa, Cristobal</li>
+            </ol>
         </section>
 
-        <section id="ejercicios-2">
-            <h2>Ejercicios de HTML 2</h2>
-            <p>
-                Aquí se agregarán las nuevas prácticas de la segunda parte
-                del curso.
-            </p>
-            <p>
-                <a href="ejercicios-de-html-2/">Ir a Ejercicios de HTML 2</a>
-            </p>
+        <!-- ACCESO A LOS DOS GRUPOS DE EJERCICIOS -->
+        <section>
+            <h2>Prácticas desarrolladas</h2>
+
+            <div class="contenedor-menus">
+
+                <div class="tarjeta">
+                    <h3>Ejercicios de HTML 1</h3>
+                    <p>
+                        Primera colección de ejercicios y prácticas
+                        desarrollados durante el curso.
+                    </p>
+                    <a class="boton" href="ejercicios-de-html-1/index.html">
+                        Ingresar a los ejercicios
+                    </a>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Ejercicios de HTML 2</h3>
+                    <p>
+                        Segunda colección de ejercicios y actividades
+                        académicas.
+                    </p>
+                    <a class="boton" href="ejercicios-de-html-2/index.html">
+                        Ingresar a los ejercicios
+                    </a>
+                </div>
+
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>Mis prácticas académicas | UPRIT</p>
-        <p>HTML · CSS · JavaScript</p>
+        <p>Trabajo académico grupal</p>
+        <p>Curso: Lenguaje, Pensamiento y Cognición Visual</p>
+        <p>UPRIT | 2026</p>
     </footer>
 
 </body>
