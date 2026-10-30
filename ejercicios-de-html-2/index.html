@@ -6,156 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mis prácticas HTML | UPRIT</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f0f4f8;
-            color: #263238;
-        }
-
-        /* ENCABEZADO */
-        header {
-            background-color: #ffffff;
-            padding: 15px 30px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            border-bottom: 4px solid #0d47a1;
-        }
-
-        header img {
-            width: 85px;
-            height: 85px;
-            object-fit: contain;
-        }
-
-        .titulo h1 {
-            margin: 0 0 8px;
-            color: #0d47a1;
-            font-size: 25px;
-        }
-
-        .titulo p {
-            margin: 0;
-            color: #607d8b;
-        }
-
-        /* MENÚ */
-        nav {
-            background-color: #0d47a1;
-            padding: 0 30px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav a {
-            display: block;
-            padding: 16px 20px;
-            color: white;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #1565c0;
-        }
-
-        /* CONTENIDO */
-        main {
-            max-width: 950px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        section {
-            background-color: white;
-            margin-bottom: 25px;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px #00000012;
-        }
-
-        h2 {
-            color: #0d47a1;
-            border-bottom: 2px solid #bbdefb;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            color: #37474f;
-        }
-
-        li {
-            margin: 12px 0;
-        }
-
-        section a {
-            color: #1565c0;
-            text-decoration: none;
-        }
-
-        section a:hover {
-            text-decoration: underline;
-            color: #d84315;
-        }
-
-        footer {
-            background-color: #0d47a1;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 5px;
-        }
-
-        /* ADAPTACIÓN A CELULARES */
-        @media (max-width: 600px) {
-            header {
-                padding: 15px;
-                gap: 12px;
-            }
-
-            header img {
-                width: 65px;
-                height: 65px;
-            }
-
-            .titulo h1 {
-                font-size: 19px;
-            }
-
-            nav {
-                padding: 0 10px;
-            }
-
-            nav a {
-                padding: 13px 10px;
-            }
-
-            main {
-                padding: 0 12px;
-            }
-
-            section {
-                padding: 18px;
-            }
-        }
-    </style>
+	<link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -175,36 +26,42 @@
     <nav>
         <ul>
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../ejercicios-de-html-1/index.html">Ejercicios de HTML 1</a></li>
-            <li><a href="index.html">Ejercicios de HTML 2</a></li>
+            <li><a href="../ejercicios-de-html-1/index.html">Ejercicios de HTML (1)</a></li>
+            <li><a href="index.html">Ejercicios de HTML (2)</a></li>
         </ul>
     </nav>
 
     <main>
 
-        <section id="inicio">
-            <h2>Bienvenido al Laboratorio HTML</h2>
-            <p>
-                En este sitio encontrarás los ejercicios desarrollados
-                durante las clases de HTML, organizados por grupos.
-            </p>
-        </section>
-
         <section id="ejercicios-1">
-            <h2>Ejercicios de HTML 2</h2>
-            <p>en desarrollo</p>
+            <h2>Ejercicios de HTML (2)</h2>
+            <ol>
+                <li><a href="01-listas-de-datos.html">Lista de Datos</a></li>
+                <li><a href="02-listas-anidadas.html">Listas Andadas</a></li>
+                <li><a href="03-tablas-de-datos.html">Tablas de Datos</a></li>
+                <li><a href="04-tabla-con-encabezado.html">Tabla con Encabezado</a></li>
+                <li><a href="05-celdas-combinadas.html">Celdas Combinadas</a></li>
 
-
-            </ul>
+            
+                <li><a href="06-tablas-ejercicio-1.html">Ejercicio 01 - tablas</a></li>
+                <li><a href="07-tablas-ejercicio-2.html">Ejercicio 02 -tablas (imagen)</a></li>
+                <li><a href="08-tablas-ejercicio-3.html">Ejercicio 03 -varias tablas</a></li>
+                <li><a href="09-tiempo-semanal.html">Ejercicio 04 - Tabla con cabeceras </a></li>
+                <li><a href="10-turnos-semanales.html">Ejercicio 05 - Tabla con título</a></li>
+                <li><a href="11-sistema-solar.html">Ejercicio 06 - Uniendo celdas</a></li>
+                <li><a href="12-planeta-jupiter.html">Ejercicio 07 - Más celdas combinadas</a></li>
+                <li><a href="13-horario-clases.html">Ejercicio 08 - Horario</a></li>
+                <li><a href="14-temperaturas.html">Ejercicio 09 - Tabla con titular y pie</a></li>  
+                <li><a href="15-ventas-almacenes.html">Ejercicio 10 - Más celdas combinadas </a></li> 
+                <li><a href="16-resultados-curso.html">Ejercicio 11 - Tabla compleja</a></li> 
+                <li><a href="17-catalogo-casas.html">Ejercicio 12 - Un catálogo con tablas.</a></li>
+                <li><a href="18-listas-combinadas-anidadas.html">Ejercicio 13 - Listas Combinadas y Anidadas</a></li>    
+            </ol>
         </section>
-
-
-
     </main>
-
     <footer>
-        <p>Mis prácticas académicas | UPRIT</p>
-        <p>HTML · CSS · JavaScript</p>
+        <p>Trabajo académico grupal HTML | UPRIT</p>
+        <p>HTML · CSS </p>
     </footer>
 
 </body>
