@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Envía Currículo</title>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+    }
+    table{
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+    }
+    th, td{
+        border: 1px solid #000;
+        padding: 8px;
+    }
+    h2{
+        text-align: center;
+    }
+    .titulo{
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<form name="micv" action="curriculum.php" method="post">
+<table>
+    <tr>
+        <th colspan="4">
+            <h2>CURRICULUM VITAE</h2>
+        </th>
+        <th>FOTO<br><input type="file"></th>
+    </tr>
+
+    <tr class="titulo">
+        <td colspan="5">DATOS PERSONALES</td>
+    </tr>
+
+    <tr>
+        <td>Apellidos</td>
+        <td colspan="2"><input type="text" style="width:95%" required></td>
+        <td>Nombre</td>
+        <td><input type="text" style="width:90%" required></td>
+    </tr>
+
+    <tr>
+        <td>DNI</td>
+        <td><input type="text"></td>
+        <td>Fecha Nacimiento</td>
+        <td ><input type="date"> </td>
+		<td>Lugar <input type="text" style="width:78%"></td>
+        
+    </tr>
+
+    <tr>
+        <td>Dirección</td>
+        <td colspan="4"><input type="text" style="width:95%"></td>
+    </tr>
+
+    <tr>
+        <td>Localidad</td>
+        <td><input type="text"></td>
+        <td>Provincia</td>
+        <td colspan="2"><input type="text"></td>
+    </tr>
+
+    <tr>
+        <td>Teléfono</td>
+        <td><input type="tel"></td>
+        <td>Celular</td>
+        <td colspan="2"><input type="tel"></td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td colspan="4">
+            <input type="email" style="width:95%">
+        </td>
+    </tr>
+
+    <tr class="titulo">
+        <td colspan="5">FORMACIÓN Y ESTUDIOS</td>
+    </tr>
+
+    <tr>
+        <td>Titulación</td>
+        <td colspan="4">
+            <textarea rows="3" style="width:95%"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Idiomas</td>
+        <td colspan="4">
+            <textarea rows="3" style="width:95%"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Conocimientos Informáticos</td>
+        <td colspan="4">
+            <textarea rows="3" style="width:95%"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Cursos y Seminarios</td>
+        <td colspan="4">
+            <textarea rows="3" style="width:95%"></textarea>
+        </td>
+    </tr>
+
+    <tr class="titulo">
+        <td colspan="5">EXPERIENCIA PROFESIONAL</td>
+    </tr>
+
+    <tr>
+        <td>Empresa</td>
+        <td colspan="4"><input type="text" style="width:95%"></td>
+    </tr>
+
+    <tr>
+        <td>Fecha</td>
+        <td><input type="date"></td>
+        <td>Puesto</td>
+        <td colspan="2"><input type="text"></td>
+    </tr>
+
+    <tr>
+        <td>Actividad desarrollada</td>
+        <td colspan="4">
+            <textarea rows="4" style="width:95%"></textarea>
+        </td>
+    </tr>
+
+    <tr class="titulo">
+        <td colspan="5">DATOS COMPLEMENTARIOS</td>
+    </tr>
+
+    <tr>
+        <td colspan="5">
+            <textarea rows="5" style="width:98%"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="5" style="text-align:center">
+            <input type="submit" value="Enviar Currículum">
+            <input type="reset" value="Limpiar">
+        </td>
+    </tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
