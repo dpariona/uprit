@@ -1,3 +1,7 @@
+# UNIVERSIDAD PRIVADA DE TRUJILLO
+# PROGRAMACION Y DESARROLLO WEB
+# ALUMNO: DONATO PARIONA HUARCAYA
+
 # 💰 Control de Gastos — Flask + SQLite
 
 Aplicación web desarrollada en **Python con Flask y SQLite** que permite autenticarse, registrar gastos y generar reportes.
